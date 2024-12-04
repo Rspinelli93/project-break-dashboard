@@ -1,3 +1,25 @@
+html{
+    background: no-repeat center fixed;
+    background-size: cover;
+    animation: backgroundChange 30s infinite;
+    transition-delay: 5s;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-image: url('/Img/img1.jpg');
+    }
+    20% {
+        background-image: url('/Img/img2.jpg');
+    }
+    60% {
+        background-image: url('/Img/img3.jpg');
+    }
+    100% {
+        background-image: url('/Img/img1.jpg');
+    }
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -30,3 +52,8 @@ a img  {
     border-radius: 8px;
     padding: 2px;
 }
+
+a img:hover{
+    transform: scale(1.1);
+}
+
