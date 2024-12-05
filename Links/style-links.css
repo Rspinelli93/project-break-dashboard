@@ -3,6 +3,7 @@ html{
     background-size: cover;
     animation: backgroundChange 30s infinite;
     transition-delay: 5s;
+    font-family: Cinzel;
 }
 
 @keyframes backgroundChange {
@@ -54,4 +55,64 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 20px;
+    gap: 2%
+}
+
+section {
+    color: azure;
+    background-color: rgba(123, 91, 43, 0.901);
+    width: 35%;
+    border: solid rgb(62, 41, 10) 4px;
+    height: 50%;
+    border-radius: 5%;
+}
+
+input {
+    font-family: Cinzel;
+    padding: 1%;
+    font-size: 100%;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+button {
+    font-family: Cinzel;
+    padding: 1%;
+    font-size: 100%;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(187, 138, 64);
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    background-color: rgb(53, 37, 13);
+    color: white;
+}
+
+h1{
+    margin: 0;
+}
+
+#top{
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+}
+#bot{
+    height: 55%;
+    width: 55%;
 }
