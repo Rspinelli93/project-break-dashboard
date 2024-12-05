@@ -54,3 +54,17 @@ footer{
     justify-content: flex-end;
     align-items: center;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+
+section {
+    padding: 15px;
+    width: 50%;
+    border: solid 3px black;
+    background-color: white;
+}
