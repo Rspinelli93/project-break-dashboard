@@ -3,6 +3,7 @@ html{
     background-size: cover;
     animation: backgroundChange 30s infinite;
     transition-delay: 5s;
+    font-family: Orbitron;
 }
 
 @keyframes backgroundChange {

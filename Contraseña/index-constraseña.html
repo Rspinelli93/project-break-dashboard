@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reloj</title>
+    <title>Generador de Contraseñas</title>
     <link rel="stylesheet" href="style-contraseña.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Doto:wght@100..900&family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,9 +19,11 @@
     </header>
     <main>
         <section>
-            <h1>Contraseña</h1>
-            <input type="number" >
+            <h1>Generador de constraseñas</h1>
+            <p>Ingresa un numero de caracteres para tu contraseña</p>
+            <input type="number" min="12" max="50" id="inputUsuario">
             <button id="btnContra">Obtener Contraseña</button>
+            <div id="divResultado"></div>
         </section>
     </main>
     <footer>
