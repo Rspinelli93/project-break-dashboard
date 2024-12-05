@@ -115,4 +115,5 @@ h1{
 #bot{
     height: 55%;
     width: 55%;
+    overflow: scroll;
 }
