@@ -72,7 +72,6 @@ section {
     width: 35%;
     border: solid rgb(62, 41, 10) 4px;
     height: 50%;
-    border-radius: 5%;
 }
 
 input {
@@ -82,7 +81,7 @@ input {
     border: 1px solid #000000;
     border-radius: 4px;
 }
-button {
+#agregar {
     font-family: Cinzel;
     padding: 1%;
     font-size: 100%;
@@ -92,9 +91,15 @@ button {
     background-color: rgb(187, 138, 64);
     transition: all 0.3s ease;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+#ocarina{
+    height: 30px;
 }
 
-button:hover {
+#agregar:hover {
     transform: translateY(-5px);
     background-color: rgb(53, 37, 13);
     color: white;
@@ -102,6 +107,11 @@ button:hover {
 
 h1{
     margin: 0;
+}
+#titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px
 }
 
 #top{
@@ -111,9 +121,14 @@ h1{
     align-items: center;
     justify-content: center;
     height: 45%;
+    border-radius: 5%;
 }
 #bot{
     height: 55%;
     width: 55%;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    scrollbar-width: 20px;
+    scrollbar-color: rgb(53, 37, 13) rgb(187, 138, 64);
 }
