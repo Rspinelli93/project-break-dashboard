@@ -1,4 +1,4 @@
-const urlApi ='http://api.weatherapi.com/v1/forecast.json?key=865f197a87974242bc1181451240912&q=madrid&days=7&aqi=no&alerts=no'
+const urlApi ='http://api.weatherapi.com/v1/forecast.json?key=865f197a87974242bc1181451240912&q=Geneva&days=7&aqi=no&alerts=no'
 
 // --- Actual --- //
 const divActual = document.getElementById('actual')
@@ -40,7 +40,7 @@ apiCall(urlApi)
 
 const tiempoActual = (data) => {
 
-    city.innerText = `${data.location.region} / ${data.location.country}`
+    city.innerText = `${data.location.name} / ${data.location.country}`
     textActual.innerText = `${data.current.condition.text}`
 
     currentData.innerHTML = `
