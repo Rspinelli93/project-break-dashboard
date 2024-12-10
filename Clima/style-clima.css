@@ -3,6 +3,9 @@ html{
     background-size: cover;
     animation: backgroundChange 30s infinite;
     transition-delay: 5s;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal
 }
 
 @keyframes backgroundChange {
@@ -54,4 +57,87 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#centralBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.512);
+    width: 45%;
+    height: 70%;
+    border-radius: 10px;
+    padding: 10px
+}
+
+h2, h4 {
+    margin: 10px 0px;
+    color:rgb(8, 0, 66)
+}
+h4{
+    color:rgba(255, 255, 175, 0.847)
+}
+#celcius{
+    width: 50px;
+}
+#tempActual {
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(8, 0, 66)
+}
+
+#divData, #currentData{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+#currentData {
+   justify-content: flex-start;
+   gap: 15px;
+}
+
+#listaActual{
+    width: 60%;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    background-color: rgba(250, 235, 215, 0.304);
+    border-radius: 5px;
+}
+
+#forecastList {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    scrollbar-width: 20px;
+    scrollbar-color: rgba(52, 65, 255, 0.671) rgba(64, 77, 255, 0.671);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(250, 235, 215, 0.671);
+    border-radius: 5px;
+}
+
+.itemForecast {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    padding-left: 10;
+    padding-right: 10;
 }
