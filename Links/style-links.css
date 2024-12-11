@@ -68,9 +68,9 @@ main {
 
 section {
     color: azure;
-    background-color: rgba(123, 91, 43, 0.901);
+    background-color: rgba(43, 47, 123, 0.901);
     width: 35%;
-    border: solid rgb(62, 41, 10) 4px;
+    border: solid rgb(10, 10, 62) 4px;
     height: 50%;
 }
 
@@ -88,7 +88,7 @@ input {
     border: 1px solid #000000;
     border-radius: 4px;
     cursor: pointer;
-    background-color: rgb(187, 138, 64);
+    background-color: rgba(245, 255, 52, 0.622);
     transition: all 0.3s ease;
     margin-bottom: 5px;
     display: flex;
@@ -97,14 +97,14 @@ input {
 }
 a{
  text-decoration: none;
- color:white
+ color:antiquewhite
 }
 
 ul {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     text-align: center;
-    gap: 20px;
+    gap: 20;
     padding: 0;
     margin: 0;
     padding: 5%;
@@ -113,13 +113,13 @@ li{
     display: flex;
     align-items: center;
     list-style: none;
-    border:rgb(53, 37, 13), solid, 2px;
+    border:rgb(13, 14, 53), solid, 2px;
     border-radius: 25px;
     padding: 8px;
     max-width: fit-content;
     max-height: fit-content;
     gap: 5px;
-    box-shadow: 6px 3px 3px rgba(53, 37, 13, 0.588);
+    box-shadow: 6px 3px 3px rgba(18, 13, 53, 0.588);
     margin-left: 20%;
 }
 #ocarina{
@@ -139,19 +139,22 @@ li{
 
 #agregar:hover {
     transform: translateY(-5px);
-    background-color: rgb(53, 37, 13);
-    color: white;
+    background-color: rgb(18, 13, 53);
+    color: antiquewhite;
 }
 
 h1{
     margin: 0;
+    color:antiquewhite
 }
 #titulo {
     display: flex;
     align-items: center;
     gap: 10px
 }
-
+input{
+    background-color: antiquewhite;
+}
 #top{
     display: flex;
     flex-direction: column;
@@ -159,7 +162,7 @@ h1{
     align-items: center;
     justify-content: center;
     height: 45%;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 #bot{
     height: 55%;
@@ -168,5 +171,32 @@ h1{
     overflow-y: scroll;
     box-sizing: border-box;
     scrollbar-width: 20px;
-    scrollbar-color: rgb(53, 37, 13) rgb(187, 138, 64);
+    border-radius: 10px;
+    scrollbar-color: rgb(51, 53, 13) rgba(245, 255, 52, 0.622);
+    padding: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    html {
+        background: transparent;
+        animation: backgroundChange none;
+    }
+    footer, nav {
+        display: none;
+    }
+    h1, img, button, input {
+        scale: 0.7;
+    }
+    main{
+        padding: 0;
+    }
+    #bot {
+        overflow-x: scroll;
+        width: 85%;
+    }
+    #top {
+        width: 60%;
+        height: 60%;
+        padding: 5px;
+    }
 }

@@ -31,20 +31,32 @@ body {
     display: flex;
     padding: 1vw;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
-h1{
+
+h1, h3{
     text-align: center;
     margin: 5px;
+    font-family: "Monoton", sans-serif;
+    font-weight: 500;
+    color: rgb(251, 255, 198);
+    font-size: 500%;
+}
+h3{
+    font-size: 220%;
 }
 #quadrants {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 98vw;
-    height: 98vh;
 }
-
+section{
+    height: 100%;
+    width: 50%;
+    margin: 10% 0;
+}
 a img  {
     width: 30px;
     cursor: pointer;
@@ -57,3 +69,28 @@ a img:hover{
     transform: scale(1.1);
 }
 
+footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    margin: 2%;
+    padding: 1%;
+    margin-top: 1%;
+}
+footer img, footer img  {
+    width: 60px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1%;
+}
+footer img:hover, footer img:hover{
+    transform: scale(1.1);
+}
+#linea{
+    color: transparent;
+    width: 600px;
+    height: 3px;
+    background-color: antiquewhite;
+    margin-left: 57%;
+}

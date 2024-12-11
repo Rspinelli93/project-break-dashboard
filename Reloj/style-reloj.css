@@ -91,5 +91,24 @@ section {
     padding: 1%;
     border-radius: 5%;
     background-color: rgba(0, 65, 126, 0.8);
-    color: white
+    color: antiquewhite
+}
+
+@media screen and (max-width: 720px) {
+    html {
+        background-color: 255,255,255,0
+    }
+    footer, nav {
+        display: none;
+    }
+    h1, img {
+        scale: 0.7;
+    }
+    section{
+      width: 75vw;
+    }
+    html {
+        background: transparent;
+        animation: backgroundChange none;
+    }
 }

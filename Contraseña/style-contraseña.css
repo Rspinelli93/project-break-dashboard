@@ -100,13 +100,14 @@ p {
     width: 10%;
     max-width: 100%;
     max-height: 100%; 
+    background-color: antiquewhite;
 }
 
 #btnContra {
     font-family: Syne Mono;
     padding: 12px 20px;
     font-size: 16px;
-    color: #fff;
+    color: antiquewhite;
     background-color: #8072ff;
     border-radius: 8px;
     cursor: pointer;
@@ -126,4 +127,25 @@ p {
     font-family: Doto;
     max-width: 100%;
     max-height: 100%; 
+}
+
+@media screen and (max-width: 720px) {
+    html {
+        background: transparent;
+        animation: backgroundChange none;
+    }
+    footer, nav {
+        display: none;
+    }
+    h1, img, button, input {
+        scale: 0.7;
+    }
+    section{
+      width: 75vw;
+      height: 80vh;
+      gap: 0;
+    }
+    body {
+        justify-content: flex-start;
+    }
 }

@@ -74,7 +74,8 @@ main{
     width: 45%;
     height: 70%;
     border-radius: 10px;
-    padding: 10px
+    gap: 5%;
+    padding: 40px
 }
 
 h2, h4 {
@@ -92,6 +93,7 @@ h4{
     font-weight: bold;
     color:rgb(8, 0, 66)
 }
+
 
 #divData, #currentData{
     display: flex;
@@ -140,4 +142,31 @@ h4{
     border: 1px solid rgba(0, 0, 0, 0.108);
     padding-left: 10;
     padding-right: 10;
+}
+
+@media screen and (max-width: 720px) {
+    html {
+        background: transparent;
+        animation: backgroundChange none;
+    }
+    footer, nav {
+        display: none;
+    }
+    h1, img, button, input, h2, h4, #divData {
+        scale: 0.8;
+    }
+    #centralBox{
+      width: 80vw;
+      height: 85vh;
+      padding: 20px;
+      gap: 0;
+    }
+    body {
+        justify-content: flex-start;
+        margin: 0;
+    }
+    #forecastList{
+        transform: scale(0.8);
+        width: 100%;
+    }
 }
