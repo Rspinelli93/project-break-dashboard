@@ -68,7 +68,7 @@ main {
 
 section {
     color: azure;
-    background-color: rgba(43, 47, 123, 0.901);
+    background-color: rgba(43, 47, 123, 0.658);
     width: 35%;
     border: solid rgb(10, 10, 62) 4px;
     height: 50%;
@@ -88,7 +88,7 @@ input {
     border: 1px solid #000000;
     border-radius: 4px;
     cursor: pointer;
-    background-color: rgba(245, 255, 52, 0.622);
+    background-color: rgba(247, 255, 101, 0.677);
     transition: all 0.3s ease;
     margin-bottom: 5px;
     display: flex;
@@ -168,11 +168,11 @@ input{
     height: 55%;
     width: 55%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y:auto;
     box-sizing: border-box;
     scrollbar-width: 20px;
     border-radius: 10px;
-    scrollbar-color: rgb(51, 53, 13) rgba(245, 255, 52, 0.622);
+    scrollbar-color: rgb(103, 108, 2) rgba(247, 255, 101, 0.677);
     padding: 10px;
 }
 
@@ -191,12 +191,15 @@ input{
         padding: 0;
     }
     #bot {
-        overflow-x: scroll;
+        overflow-x: auto;
         width: 85%;
     }
     #top {
         width: 60%;
         height: 60%;
-        padding: 5px;
+        padding: 15px;
+    }
+    #titulo{
+        gap:0;
     }
 }
